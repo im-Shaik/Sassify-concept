@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Default */
+
+/* All Transition */
+.header-wrapper ul li a::before,
+.services-wrapper > div:last-child > div > div > a,
+.services-wrapper > div:last-child > div > div > a,
+.services-wrapper > div:last-child > div > div,
+.footer-wrapper > div:last-child > div > div li a {
+  transition: all 0.4s;
+}
+
+/* All Transition */
+
+/* All padding */
+.banner,
+.logos,
+.services,
+.platform,
+.access,
+.plan,
+.feedback {
+  padding: 100px 0;
+}
+/* All padding */
+
+/* All Font size Start */
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 40px;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* All Font size End */
+
+/* Main */
+main {
+  background: url(../img/bg/bg.png) no-repeat center;
+  background-size: cover;
+}
+/* Main */
+
+/* Header */
+header {
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper ul {
+  display: flex;
+  gap: 20px;
+}
+
+.my-button a {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.white-btn a {
+  background: #ffffff;
+  color: #000000;
+}
+
+.color-btn a {
+  background: linear-gradient(#2066f9, #121bd0);
+  color: #ffffff;
+}
+
+.header-wrapper ul li a {
+  color: #ffffff;
+  position: relative;
+}
+
+.header-wrapper ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 21px;
+  height: 3px;
+  border-radius: 5px;
+  width: 0%;
+  background-color: #ffffff;
+}
+
+.header-wrapper ul li a:hover::before {
+  width: 70%;
+}
+/* Header */
+
+/* Banner */
+.banner {
+  color: #ffffff;
+}
+
+.banner-input {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+
+.banner-input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 20px 20px 20px 50px;
+}
+
+.banner-input input:focus {
+  color: #3e3e3e;
+  font-weight: 600;
+  outline: none;
+}
+
+.banner-input input::placeholder {
+  color: #3e3e3e;
+  font-weight: 600;
+}
+
+.banner-input p,
+.banner-input .my-button {
+  position: absolute;
+}
+
+.banner-input > p {
+  font-size: 20px;
+  color: #3e3e3e;
+  top: 50%;
+  left: 15px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.banner-input .my-button {
+  right: 10px;
+  top: 10px;
+}
+
+/* Banner */
+
+/* Logos */
+.logo-wrapper > div {
+  width: 150px;
+}
+
+.logo-wrapper > div > img {
+  width: 100%;
+}
+/* Logos */
+
+/* Services */
+.services-wrapper > div:last-child > div > div > a {
+  font-weight: 600;
+  color: #0f0bc7;
+  gap: 10px;
+}
+
+.services-wrapper > div:last-child > div > div > a:hover {
+  gap: 15px;
+}
+
+.services-wrapper > div:last-child > div > div {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+  padding: 35px 15px;
+  border-radius: 15px;
+}
+
+.services-wrapper > div:last-child > div > div:hover {
+  transform: translateY(-15px);
+  box-shadow: rgba(17, 17, 26, 0.08) 0px 1px 15px,
+    rgba(17, 17, 26, 0.2) 0px 0px 28px;
+}
+/* Services */
+
+/* Dashboard */
+.dashboard div img {
+  width: 100%;
+}
+/* Dashboard */
+
+/* Access */
+
+.access {
+  background: linear-gradient(#2272ff, #0d03c3);
+  color: #ffffff;
+}
+
+.access-wrapper > div:last-child > div > div ul li {
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.access-wrapper > div:last-child > div > div ul li h5 {
+  font-weight: 600;
+}
+
+.access-wrapper > div:last-child > div > div ul li p {
+  font-weight: 300;
+  color: #ffffffc4;
+}
+
+.access-wrapper > div:last-child > div > div ul li .before {
+  background: url(../services/access/1.svg) no-repeat center;
+  background-size: contain;
+  height: 85px;
+  width: 95px;
+}
+
+.access-wrapper > div:last-child > div > div ul li:nth-child(2) .before {
+  background: url(../services/access/2.svg) no-repeat center;
+  background-size: contain;
+}
+
+.access-wrapper > div:last-child > div > div ul li:nth-child(3) .before {
+  background: url(../services/access/3.svg) no-repeat center;
+  background-size: contain;
+}
+/* Access */
+
+/* Plan */
+
+.plan-wrapper > div:first-child {
+  margin-bottom: 150px;
+}
+
+.plan-wrapper > div > div > div {
+  box-shadow: 1px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 30px 20px;
+  /* background-color: red; */
+}
+
+.plan-wrapper > div > div > div h3,
+h2 {
+  font-weight: 700;
+}
+
+.plan-wrapper > div > div > div h2 {
+  color: #0f0bc7;
+}
+
+.plan-wrapper > div > div > div span {
+  font-size: 16px;
+}
+
+.plan-wrapper > div > div > div span:first-child {
+  color: #3c3a3ac7;
+}
+
+.plan-wrapper > div > div > div > div:first-child {
+  /* background-color: red; */
+  border-bottom: 2px solid #3c3a3ac7;
+}
+
+.plan-wrapper > div > div > div > div:last-child {
+  text-align: center;
+}
+
+.plan-wrapper > div > div > div li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.plan-wrapper > div > div > div ul {
+  min-height: 300px;
+}
+
+.plan-wrapper > div > div > div li div {
+  height: 20px;
+  width: 20px;
+  background: url(../services/plan/blue-tick.svg) no-repeat center;
+  background-size: cover;
+}
+
+.plan-wrapper > div > div > div:hover {
+  background-color: #0d03c3;
+  color: #ffffff;
+}
+
+.plan-wrapper > div > div > div:hover li div {
+  background: url(../services/plan/white-tick.svg) no-repeat center;
+  background-size: cover;
+}
+
+.plan-wrapper > div > div > div:hover h2,
+.plan-wrapper > div > div > div:hover h2 > span {
+  color: #ffffff !important;
+}
+
+.plan-wrapper > div > div > div:hover .color-btn a {
+  background: #ffffff !important;
+  color: #0d03c3;
+}
+
+.plan-wrapper > div > div > div:hover > div:first-child {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Plan */
+
+/* Feedback */
+.feedback-wrapper > div > div > div {
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 1px 2px 0px #7b7b7b;
+}
+
+.feedback-wrapper > div > div > div > div:last-child {
+  gap: 10px;
+}
+
+.feedback-wrapper > div > div > div > div:last-child span {
+  color: #7b7b7b;
+}
+
+/* Feedback */
+
+/* Footer */
+footer {
+  padding: 100px 0 0 0;
+  background-color: #040335;
+  color: #ffffff;
+}
+
+.footer-wrapper > div:first-child {
+  padding: 40px 0;
+  /* background-color: red; */
+  border-bottom: 2px solid #7b7b7b;
+}
+
+.footer-wrapper > div:first-child > .white-btn a {
+  color: #0f0bc7 !important;
+}
+
+.footer-wrapper > div:last-child {
+  padding: 40px 0;
+  /* background-color: red; */
+  border-bottom: 2px solid #7b7b7b;
+}
+
+.footer-wrapper > div:last-child > div > div li,
+.footer-wrapper > div:last-child > div > div h5 {
+  margin-bottom: 10px;
+}
+
+.footer-wrapper > div:last-child > div:first-child > div p,
+.footer-wrapper > div:last-child > div > div li a {
+  color: #7b7b7b;
+}
+
+.footer-wrapper > div:last-child > div > div li a:hover {
+  color: rgb(217, 217, 217);
+}
+
+footer h6 {
+  color: #7b7b7b;
+}
+
+/* Footer */
+
+/* Break Points */
+@media only screen and (max-width: 768px) {
+  header ul {
+    display: none !important;
+  }
+
+  .banner {
+    padding: 30px 0;
+  }
+
+  .logo-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .platform {
+    padding: 10px 0;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .access-wrapper p {
+    margin-bottom: 0 !important;
+  }
+  .footer-wrapper > div:last-child {
+    justify-content: center;
+    gap: 35px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .access-wrapper > div:first-child > div a {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .banner-input input {
+    padding-right: 173px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  .logo-wrapper {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .banner-input {
+    width: 40% !important;
+  }
+  .banner-input input {
+    padding-right: 177px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .banner-input {
+    width: 60%;
+  }
+}
